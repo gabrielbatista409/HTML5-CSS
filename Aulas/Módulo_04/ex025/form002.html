@@ -9,14 +9,14 @@
 <body>
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="post"
-    autocomplete="off">
+    autocomplete="on">
         <p>
             <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" required minlength="4" maxlength="15">
+            <input type="text" name="usu" id="iusu" required minlength="4" maxlength="20" size="10" placeholder="Nome do Usuário" autocomplete="username">
         </p>
         <p>
             <label for="isen">Password:</label>
-            <input type="password" name="sen" id="isen" required minlength="8">
+            <input type="password" name="sen" id="isen" required minlength="8" size="9" placeholder="Mínimo 8 letras" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
