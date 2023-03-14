@@ -22,7 +22,7 @@ header h1 {
     font-size: 2.5em;
 }
 
-span.material-symbols-outlined  {
+span#burguer  {
     display: block;
     background-color: rgb(146, 146, 146);
     text-align: center;
@@ -30,7 +30,7 @@ span.material-symbols-outlined  {
     cursor: pointer;
 }
 
-span.material-symbols-outlined:hover {
+span#burguer:hover {
     background-color: white;
     color: black;
 }
