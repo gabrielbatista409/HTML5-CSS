@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../imagens/SUNSET-LANDS-12282022.jpg);   
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav a {
+    position: relative;
+    padding: 10px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+}
+
+/* nav a:hover {
+    background: #bdbdbd;
+    color: #1b1b1b;
+    border-radius: 10px;
+    transition: 0.5s;
+} */
+
+nav .underlined::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    border: none;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+nav a.underlined:hover::after {
+    width: 100%;
+    transition: .35s;
+}
+
+nav #logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.4em;
+}
+
+nav a#botao-login {
+    padding: 15px 30px;
+    border: 2px solid #bdbdbd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+nav a#botao-login:hover {
+    color: rgb(34, 28, 28);
+    background-color: #d6cece;
+    transition: 0.6s;
+}
+
+#formulario {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff10;
+    backdrop-filter: blur(22px);
+    border: 2px solid #ffffff30;
+    border-radius: 20px;
+}
+
+#formulario .caixa-formulario{
+    width: 100%;
+    padding: 40px;
+}
+
+.caixa-formulario h2 {
+    color: #1b1b1b;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 42px;
+}
+
+.caixa-texto {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #1b1b1b;
+    margin: 30px 0;
+}
+
+.caixa-texto label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+
+    font-size: 1em;
+    color: #1b1b1b;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .6s;
+}
+
+.caixa-texto input:focus~label,
+.caixa-texto input:valid~label {
+    top: -5px;
+}
+
+.caixa-texto input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.caixa-texto .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 2em;
+    color: #1b1b1b;
+}
+
+.checkbox {
+    font-size: 0.9em;
+}
+
+.checkbox a {
+    padding-left: 35px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #610b61;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    margin-top: 15px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    background-color: #1b1b1b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #474242;
+    transition: .5s;
+}
+
+.criar-conta {
+    padding-top: 10px;
+}
+
+.criar-conta p {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.criar-conta a {
+    padding-left: 3px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #610b61;
+}
